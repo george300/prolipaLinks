@@ -22,6 +22,6 @@ Route::get('/', function () {
 //Rutas para areas
 Route::resource('areas', 'AreaController');
 //=======APIS PARA ACORTADORES========================
-Route::resource('l_', 'LinkAcortadorController');
+Route::resource('p', 'LinkAcortadorController');
 Route::get('filtroLibros', 'LinkAcortadorController@filtroLibros');
 
