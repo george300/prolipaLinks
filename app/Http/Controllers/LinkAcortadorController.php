@@ -18,16 +18,16 @@ class LinkAcortadorController extends Controller
     public function index(Request $request)
     {
         // $url =  URL::to('/');
-        $links = DB::SELECT("SELECT l.*,
-        CONCAT(u.nombres, ' ',u.apellidos) as editor, li.nombrelibro, ar.nombrearea
-        FROM links_acortadores l
-        LEFT JOIN usuario u ON l.usuario_editor = u.idusuario
-        LEFT JOIN libro li ON li.idlibro = l.libro_id
-        LEFT JOIN asignatura a ON li.asignatura_idasignatura = a.idasignatura
-        LEFT JOIN area ar ON a.area_idarea = ar.idarea
-        ORDER BY id DESC
-        ");
-       return $links;
+    //     $links = DB::SELECT("SELECT l.*,
+    //     CONCAT(u.nombres, ' ',u.apellidos) as editor, li.nombrelibro, ar.nombrearea
+    //     FROM links_acortadores l
+    //     LEFT JOIN usuario u ON l.usuario_editor = u.idusuario
+    //     LEFT JOIN libro li ON li.idlibro = l.libro_id
+    //     LEFT JOIN asignatura a ON li.asignatura_idasignatura = a.idasignatura
+    //     LEFT JOIN area ar ON a.area_idarea = ar.idarea
+    //     ORDER BY id DESC
+    //     ");
+    //    return $links;
     }
 
     /**
